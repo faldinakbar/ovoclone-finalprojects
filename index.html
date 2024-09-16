@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVO Clone - FALDIN AKBAR IMANI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="headerBox">
+            <div class="headerUp">
+                <img src="assets/ovoLogo.png">
+                <div class="promoBox">
+                    <i class='bx bxs-discount'></i>
+                    <p>Promo</p>
+                </div>
+            </div>
+            <div class="headerBottom">
+                <div class="headerBottomBox">
+                    <div class="headerContentUp">
+                        <img src="assets/ovoLogo.png" style="width: 10%; height: 10%;">
+                        <p style="font-family: 'Poppins', sans-serif; margin: 0;">Cash</p>
+                    </div>
+                    <div class="totalSaldo">
+                        <p>Total Saldo</p>
+                        <i class='bx bx-low-vision' onclick="hideShow()" id="hideShow"></i>
+                    </div>
+                    <div class="saldo">
+                        <p>Rp<span class="salldo">100.000</span></p>
+                        <div class="point">
+                            <i class='bx bxl-bitcoin' id="coin"></i>
+                            <p>OVO Points</p>
+                            <i class='bx bx-chevron-right'></i>
+                        </div>
+                    </div>
+                    <div class="paymentMethod">
+                        <div class="paymentMethodContent" style="font-family: 'Poppins', sans-serif;">
+                            <div class="topUp">
+                                <i class='bx bxs-plus-circle'></i>
+                                <p>Top Up</p>
+                            </div>
+                            <div class="transfer">
+                                <i class='bx bx-upload'></i>
+                                <p>Transfer</p>
+                            </div>
+                            <div class="tarikTunai">
+                                <i class='bx bx-download'></i>
+                                <p>Tarik Tunai</p>
+                            </div>
+                            <div class="history">
+                                <i class='bx bxs-detail'></i>
+                                <p>History</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="nav">
+        <div class="navbar">
+            <div class="navigation">
+                <a href="" class="fv">Favorit</a>
+                <a href="" class="pl">Pilihan Lain</a>
+                <a href="" class="gb">Grab</a>
+                <a href="" class="fn">Finansial</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="contentBox">
+            <div class="contentContent">
+                <div class="contentUp">
+                    <div class="content1">
+                        <div class="content1Box">
+                            <img src="assets/peminjamanUang.svg">
+                        </div>
+                        <div class="content1Title">
+                            <p>Pinjaman</p>
+                        </div>
+                    </div>
+                    <div class="content2">
+                        <div class="content2Box">
+                            <img src="assets/angsuranKredit.svg">
+                        </div>
+                        <div class="content2Title">
+                            <p style="text-align: center;">Angsuran<br>Kredit</p>
+                        </div>
+                    </div>
+                    <div class="content3">
+                        <div class="content3Box">
+                            <img src="assets/pulsa.svg">
+                        </div>
+                        <div class="content3Title">
+                            <p style="text-align: center;">Pulsa/Paket<br>Data</p>
+                        </div>
+                    </div>
+                    <div class="content4">
+                        <div class="content4Box">
+                            <img src="assets/pln.svg">
+                        </div>
+                        <div class="content4Title">
+                            <p>PLN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentBottom">
+                    <div class="content5">
+                        <div class="content5Box">
+                            <img src="assets/air.svg">
+                        </div>
+                        <div class="content5Title">
+                            <p>Air PDAM</p>
+                        </div>
+                    </div>
+                    <div class="content6">
+                        <div class="content6Box">
+                            <img src="assets/tv.svg">
+                        </div>
+                        <div class="content6Title">
+                            <p style="text-align: center;">Internet & TV<br>Kabel</p>
+                        </div>
+                    </div>
+                    <div class="content7">
+                        <div class="content7Box">
+                            <img src="assets/pajak.svg">
+                        </div>
+                        <div class="content7Title">
+                            <p>Pajak PBB</p>
+                        </div>
+                    </div>
+                    <div class="content8">
+                        <div class="content8Box">
+                            <img src="assets/game.svg">
+                        </div>
+                        <div class="content8Title">
+                            <p style="text-align: center;">Voucher<br>Games</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="bannerBox">
+            <div class="autoplay">
+                <img src="assets/resized_image_1.jpg">
+                <img src="assets/b2.png">
+                <img src="assets/resized_image_2.jpg">
+                <img src="assets/resized_image_3.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="pilihan">
+        <div class="pilihanBox">
+            <div class="pilihanTitle">
+                <h2>Rekomendasi Pilihan</h2>
+            </div>
+            <div class="pilihanContent">
+                <div class="pilihan1">
+                    <img src="assets/resized_image_1.jpg" class="img1">
+                    <p>Belanja</p>
+                    <h3>Belanja Hemat Pake<br>OVO</h3>
+                    <img src="assets/ovoLogo.png" class="logo1">
+                </div>
+                <div class="pilihan2">
+                    <img src="assets/b2.png" class="img2">
+                    <p>E-Commerce</p>
+                    <h3>Gas Checkout Anti<br>Boros!</h3>
+                    <img src="assets/ovoLogo.png" class="logo2">
+                </div>
+                <div class="pilihan3">
+                    <img src="assets/resized_image_2.jpg" class="img3">
+                    <p>Investasi</p>
+                    <h3>Investasi Anti Rugi!</h3>
+                    <img src="assets/ovoLogo.png" class="logo3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menarik">
+        <div class="menarikBox">
+            <div class="menarikTitle">
+                <h3>Yang Menarik di OVO</h3>
+                <p style="margin-top: 0;">Jangan ngaku update kalau belum cobain fitur ini</p>
+            </div>
+            <div class="menarikContentUp">
+                <div class="menarik1Box">
+                    <img src="assets/callCenter.jpg">
+                    <h4>Pusat Bantuan</h4>
+                    <p>Punya kendala atau pertanyaan terkait OVO? Pusat Bantuan lah..</p>
+                    <h5>Lihat Bantuan</h5>
+                </div>
+                <div class="menarik2Box">
+                    <img src="assets/voucher.jpg">
+                    <h4>Promo Voucher<br>Favorit</h4>
+                    <p>Yuk cek berbagai promo menarik di aplikasi OVO sekarang!</p>
+                    <h5>Cek di sini!</h5>
+                </div>
+            </div>
+            <div class="menarikContentBottom">
+                <div class="menarik3Box">
+                    <img src="assets/strategiKeuangan.jpg">
+                    <h4>Strategi untuk<br>Keuangan Anda</h4>
+                    <p>Susun strategi keuangan anda</p>
+                    <h5>Klik di Sini!</h5>
+                </div>
+                <div class="menarik4Box">
+                    <img
+                        src="https://abcpoins.com/wp-content/uploads/2023/12/857f754d8feb95cab47765549fc26fef-960x540.jpg">
+                    <h4>Metode Budgeting</h4>
+                    <p>Ketahui 7 metode budgeting untuk perencanaan keua..</p>
+                    <h5>Klik di Sini!</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mainNav">
+        <div class="mainNavBox">
+            <div class="mainNavContent">
+                <div class="homeNavMain">
+                    <i class='bx bxs-home' style='color:#4e2a8e'></i>
+                    <p>Home</p>
+                </div>
+                <div class="financeNavMain">
+                    <i class='bx bxl-bitcoin' style='color:#58585a'></i>
+                    <p>Finance</p>
+                </div>
+                <div class="qrisPay">
+                    <div class="qrisPayBox">
+                        <img src="assets/QRIS_logo.svg.png">
+                    </div>
+                    <p>Pay</p>
+                </div>
+                <div class="inboxNavMain">
+                    <i class='bx bxs-bell' style='color:#58585a'></i>
+                    <p>Inbox</p>
+                </div>
+                <div class="profileNavMain">
+                    <i class='bx bxs-user-circle' style='color:#58585a' ></i>
+                    <p>Profile</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- AAAA -->
+
+    <script type="text/javascript" src="styles/main.js"></script>
+
+    <script type="text/javascript">
+        $('.autoplay').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            pauseOnHover: true,
+            dots: true,
+        });
+    </script>
+    <!-- AAAA -->
+</body>
+
+</html>
